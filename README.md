@@ -17,10 +17,10 @@ angsd http://www.popgen.dk/angsd/index.php/ANGSD
 
 R https://cran.r-project.org
 
-doParallel R package. Can be installed by running
+doParallel R package. Can be installed by running the following in R.
 ```
 install.packages("doParallel")
 ```
-inside R.
+
 
 
