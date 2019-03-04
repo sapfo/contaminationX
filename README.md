@@ -11,7 +11,7 @@ install.packages("doParallel")
 Most recent version of ContaEstBoth.R
 
 # Reference data
-We distribute the ten reference HapMap panels that we use in <insert publication>.  
+We distribute the ten reference HapMap panels that we use in INSERT PUBLICATION.  
   
 Coordinates in these files are hg19 and 0-based.
   
