@@ -73,7 +73,7 @@ counts=OUTPUT_counts use the output from previous step as input
 
 maxsites=1000 resample at most 1,000 blocks for the block jackknife procedure
 
-nthr=4 use four threads
+nthr=4 use four threads (use many of these!)
 
 outfile=OUTPUT_results write results to file called OUTPUT_results
 
