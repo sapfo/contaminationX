@@ -13,8 +13,14 @@ Rscript ContaEst.R counts=OUTPUT_counts freqs=HapMapCEU.gz maxsites=1000 nthr=60
 # Improving readme
 
 # Requirements
+angsd http://www.popgen.dk/angsd/index.php/ANGSD
+
 R https://cran.r-project.org
 
-angsd http://www.popgen.dk/angsd/index.php/ANGSD
+doParallel R package. Can be installed by running
+```
+install.packages("doParallel")
+```
+inside R.
 
 
