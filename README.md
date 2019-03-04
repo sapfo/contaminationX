@@ -33,7 +33,17 @@ A description of how to build these panels is included in the angsd distribution
 angsd/RES/getALL.txt
 ```
 
-#
+# Test data
+You can download a test bamfile by running:
+```
+wget -o AncientOne_X.bam https://sid.erda.dk/share_redirect/E7PWk3Kx13
+wget -o AncientOne_X.bam.bai https://sid.erda.dk/share_redirect/BS0sdufOr6
+```
+
+
+
+
+This are X-chromosome reads produced in https://doi.org/10.1038/nature14625
 
 ñam ñam n_n
 
