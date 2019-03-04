@@ -23,5 +23,21 @@ install.packages("doParallel")
 ```
 Most recent version of ContaEstBoth.R
 
+# Reference data
+We distribute the ten reference HapMap panels that we use in <insert publication>.  
+  
+A description of how to build these panels is included in the angsd distribution under
+```
+angsd/RES/getALL.txt
+```
+
+
+
+
+
+
+
+
+
 
 
