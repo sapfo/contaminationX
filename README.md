@@ -21,6 +21,7 @@ doParallel R package. Can be installed by running the following in R.
 ```
 install.packages("doParallel")
 ```
+Most recent version of ContaEstBoth.R
 
 
 
