@@ -26,12 +26,16 @@ Most recent version of ContaEstBoth.R
 # Reference data
 We distribute the ten reference HapMap panels that we use in <insert publication>.  
   
+Coordinates in these files are hg19 and 0-based.
+  
 A description of how to build these panels is included in the angsd distribution under
 ```
 angsd/RES/getALL.txt
 ```
 
+#
 
+ñam ñam n_n
 
 
 
