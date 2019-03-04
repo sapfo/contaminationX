@@ -67,15 +67,36 @@ angsd/misc/contamination -b 5000000 -c 154900000 -k 1 -m 0.05 -d 3 -e 20 -h HapM
 ```
 Rscript ContaEstBoth.R counts=OUTPUT_counts freqs=HapMapCEU.gz maxsites=1000 nthr=4 outfile=OUTPUT_results oneCns=1
 ```
-freqs should be the same file that was used in -h in the previous step.
+freqs should be the same file that was used in -h in the previous step. 
+
+counts=OUTPUT_counts use the output from previous step as input
 
 maxsites=1000 resample at most 1,000 blocks for the block jackknife procedure
 
 nthr=4 use four threads
 
+outfile=OUTPUT_results write results to file called OUTPUT_results
+
 oneCns=1 obtain both One-consensus and Two-consensus estimates
 
 You can get help by running without arguments Rscript ContaEstBoth.R
+
+# Output
+Output is a tab-separated file with six columns.
+1. Method
+
+2. Contamination point estimate
+
+3. Lower bound for 95% confidence interval
+
+4. Upper bound for 95% confidence interval
+
+5. Error rate (epsilon)
+
+6. Number of overlapping sites between reference panel and sequencing data, after filtering. 
+
+By running the example, you get something like this:
+
 
 
 
