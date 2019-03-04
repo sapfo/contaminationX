@@ -46,8 +46,8 @@ This are X-chromosome reads sequenced in https://doi.org/10.1038/nature14625
 ## Create counts
 We first tabulate the allele counts.
 ```
-angsd -i test_X -r X: -doCounts 1 -iCounts 1 -minMapQ 30 -minQ 20 -out OUTPUT
-angsd/misc/contamination -b 5000000 -c 154900000 -k 1 -m 0.05 -d 3 -e 20 -h HapMapCEU.gz -a OUTPUT.icnts.gz > OUTPUT_counts
+angsd -i test_X.bam -r X: -doCounts 1 -iCounts 1 -minMapQ 30 -minQ 20 -out OUTPUT
+angsd/misc/contamination -b 5000000 -c 154900000 -k 1 -m 0.05 -d 3 -e 20 -h HapMapFreqs/HapMapCEU.gz -a OUTPUT.icnts.gz > OUTPUT_counts
 ```
 -k 1 Require angsd to output the counts. This is required.
 
@@ -65,7 +65,7 @@ angsd/misc/contamination -b 5000000 -c 154900000 -k 1 -m 0.05 -d 3 -e 20 -h HapM
 
 ## Estimate
 ```
-Rscript ContaEstBoth.R counts=OUTPUT_counts freqs=HapMapCEU.gz maxsites=1000 nthr=4 outfile=OUTPUT_results oneCns=1
+Rscript ContaEstBoth.R counts=OUTPUT_counts freqs=HapMapFreqs/HapMapCEU.gz maxsites=1000 nthr=4 outfile=OUTPUT_results oneCns=1
 ```
 freqs should be the same file that was used in -h in the previous step. 
 
