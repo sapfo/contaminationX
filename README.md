@@ -10,3 +10,10 @@ angsd/misc/contamination -b 5000000 -c 154900000 -k 1 -m 0.05 -d 3 -e 20 -h HapM
 
 Rscript ContaEst.R counts=OUTPUT_counts freqs=HapMapCEU.gz maxsites=1000 nthr=60 outfile=OUTPUT_res;
 
+# Improving readme
+
+# Requirements
+R https://cran.r-project.org
+angsd http://www.popgen.dk/angsd/index.php/ANGSD
+
+
