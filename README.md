@@ -49,12 +49,34 @@ We first tabulate the allele counts.
 angsd -i test_X -r X: -doCounts 1 -iCounts 1 -minMapQ 30 -minQ 20 -out OUTPUT
 angsd/misc/contamination -b 5000000 -c 154900000 -k 1 -m 0.05 -d 3 -e 20 -h HapMapCEU.gz -a OUTPUT.icnts.gz > OUTPUT_counts
 ```
+-k 1 Require angsd to output the counts. This is required.
+
 -minMapQ 30 discards reads with mapping quality <30
+
 -minQ 20 discards nucleotides with base quality <20
+
 -b 5000000 -c 154900000 exclude pseudo-autosomal regions
+
 -m 0.05 exclude variants with maf<0.05
+
 -d 3 -e 20 discard sites with a minimum depth of 3 and a maximum of 20
+
 -h HapMapCEU.gz use the HapMap CEU allele frequencies for estimation
+
+## Estimate
+```
+Rscript ContaEstBoth.R counts=OUTPUT_counts freqs=HapMapCEU.gz maxsites=1000 nthr=4 outfile=OUTPUT_results oneCns=1
+```
+freqs should be the same file that was used in -h in the previous step.
+
+maxsites=1000 resample at most 1,000 blocks for the block jackknife procedure
+
+nthr=4 use four threads
+
+oneCns=1 obtain both One-consensus and Two-consensus estimates
+
+You can get help by running without arguments Rscript ContaEstBoth.R
+
 
 
 
