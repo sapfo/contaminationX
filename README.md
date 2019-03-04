@@ -44,9 +44,21 @@ This are X-chromosome reads sequenced in https://doi.org/10.1038/nature14625
 # Running with test data
 
 ## Create counts
-We first want to tabulate the allele counts $n_k$
+We first tabulate the allele counts.
+```
+angsd -i test_X -r X: -doCounts 1 -iCounts 1 -minMapQ 30 -minQ 20 -out OUTPUT
+angsd/misc/contamination -b 5000000 -c 154900000 -k 1 -m 0.05 -d 3 -e 20 -h HapMapCEU.gz -a OUTPUT.icnts.gz > OUTPUT_counts
+```
+-minMapQ 30 discards reads with mapping quality <30
+-minQ 20 discards nucleotides with base quality <20
+-b 5000000 -c 154900000 exclude pseudo-autosomal regions
+-m 0.05 exclude variants with maf<0.05
+-d 3 -e 20 discard sites with a minimum depth of 3 and a maximum of 20
+-h HapMapCEU.gz use the HapMap CEU allele frequencies for estimation
 
 
+
+This is a dog :dog:
 
 ñam ñam n_n
 
