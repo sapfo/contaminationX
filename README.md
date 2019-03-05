@@ -26,7 +26,7 @@ You can download a test bamfile by running:
 wget -O test_X.bam https://sid.erda.dk/share_redirect/E7PWk3Kx13
 wget -O test_X.bam.bai https://sid.erda.dk/share_redirect/BS0sdufOr6
 ```
-This are X-chromosome reads sequenced in https://doi.org/10.1038/nature14625
+These are X-chromosome reads sequenced in https://doi.org/10.1038/nature14625
 
 # Running with test data
 
