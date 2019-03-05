@@ -70,13 +70,6 @@ if(is.na(countsname) | is.na(contafrqsname) | is.na(outfilename)){
 
 #################
 
-#args for testing
-#countsname<-"/willerslev/scratch/bkl835/Contamination/ReWrite_250518/Tests/Yoruba_French_0.5_0.15_4C86u9.bam_CEU.icnts.gz_counts"
-#contafrqsname<-"/willerslev/users-shared/science-snm-willerslev-bkl835/jmoreno/#ContaminationPanels/HapMapCEU.gz"
-#outfilename<-"testout"
-#maxnsites<-1000
-#nthr<-30
-
 require(doParallel)
 registerDoParallel(cores=nthr)
 
