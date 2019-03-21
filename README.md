@@ -1,6 +1,6 @@
 
 # Requirements
-angsd http://www.popgen.dk/angsd/index.php/ANGSD
+angsd (>=0.922) http://www.popgen.dk/angsd/index.php/ANGSD
 
 R https://cran.r-project.org
 
