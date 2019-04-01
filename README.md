@@ -50,6 +50,8 @@ angsd/misc/contamination -b 5000000 -c 154900000 -k 1 -m 0.05 -d 3 -e 20 -h HapM
 
 -h HapMapCEU.gz use the HapMap CEU allele frequencies for estimation
 
+An important point: 'HapMapFreqs' folder is present inside our Git repository 'contaminationX'.
+
 ## Estimate
 ```
 Rscript bin/ContaEstBoth.R counts=OUTPUT_counts freqs=HapMapFreqs/HapMapCEU.gz maxsites=1000 nthr=4 outfile=OUTPUT_results oneCns=1
