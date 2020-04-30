@@ -1,4 +1,7 @@
 
+# Citation
+https://academic.oup.com/bioinformatics/article-abstract/36/3/828/5554699
+
 # Requirements
 angsd (>=0.922) http://www.popgen.dk/angsd/index.php/ANGSD
 
@@ -11,7 +14,7 @@ install.packages("doParallel")
 Most recent version of ContaEstBoth.R
 
 # Reference data
-We distribute the ten reference HapMap panels that we use in INSERT PUBLICATION.  
+We distribute the ten reference HapMap panels that we use in Moreno-Mayar et al., 2019.  
   
 Coordinates in these files are hg19 and 0-based.
   
